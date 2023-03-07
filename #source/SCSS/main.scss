@@ -1,0 +1,32 @@
+body {
+    font-family: $fontMain;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $colorMain;
+    background-color: $colorBackground;
+    -webkit-font-smoothing: antialised;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: $containerWidth;
+    padding: 0 $containerPadding;
+}
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 425px) {
+    body {
+        font-size: $fontSizeMobile;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,253 @@
+@import "./SCSS/null";
+@import "./SCSS/var";
+@import "./SCSS/main";
+@import "./SCSS/mobile.scss";
+
+
+.section {
+    &__home {
+        height: 100vh;
+    }
+
+    &__memories {
+        height: 100vh;
+    }
+
+    &__wishes {
+        height: 100vh;
+    }
+}
+
+.home {
+    &__content {
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    &__title {
+        margin-top: 15rem;
+        margin-bottom: 6rem;
+    }
+
+    &__subtitle {
+        font-size: 1.7rem;
+    }
+}
+
+.subtitle {
+    &__home {
+        &-text {
+            margin-bottom: 0.7rem;
+        }
+    }
+}
+
+
+.memories {
+    &__content {
+        padding: 2rem 0;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__slider {
+        margin: 0 auto;
+
+
+        & .slick-track {
+            display: flex;
+            align-items: center;
+        }
+
+        & .slick-list {
+            overflow: hidden;
+        }
+
+    }
+}
+
+.slider {
+    &__item {
+        &_memories-photo {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 auto 1.5rem;
+            width: 22rem;
+            height: 100%;
+            border-radius: 5%;
+            overflow: hidden;
+        }
+
+        &_memories-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &_memories-subtitle {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.wishes {
+
+    &__content {
+        padding: 2rem 0;
+    }
+
+    &__title {
+        margin-bottom: 1.5rem;
+    }
+
+    &__item {
+        background-color: $colorSecond;
+        border-radius: 5rem;
+        margin-bottom: 1.5rem;
+        
+    }
+
+    &__item-button {
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
+        font-size: 1.7rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    &__item-content {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .3s linear;
+
+        &-photo {
+            margin: 0 auto 1rem;
+            width: 25rem;
+            overflow: hidden;
+            border-radius: 3rem;
+        }
+
+        &-text {
+            padding: 0 1rem 1rem;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    .section {
+        &__home {
+            height: 100%;
+        }
+    
+        &__memories {
+            height: 100%;
+        }
+    
+        &__wishes {
+            height: 100%;
+        }
+    }
+    
+    .home {
+        &__content {
+            padding: 1rem 0;
+            margin-bottom: 10rem;
+        }
+    
+        &__title {
+            margin-top: 10rem;
+            margin-bottom: 3rem;
+        }
+    
+        &__subtitle {
+            font-size: 1.3rem;
+        }
+    }
+    
+    .subtitle {
+        &__home {
+            &-text {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .memories {
+        &__content {
+            padding: 1rem 0;
+            margin-bottom: 12rem;
+        }
+    
+        &__title {
+            font-size: 1.6rem;
+            margin-bottom: 0.8rem;
+        }
+    
+    }
+    
+    .slider {
+        &__item {
+            &_memories-photo {
+                margin: 0 auto 1.3rem;
+                width: 15rem;
+                height: 100%;
+                border-radius: 5%;
+                overflow: hidden;
+            }
+    
+            &_memories-title {
+                font-size: 2rem;
+                margin-bottom: 1.2rem;
+            }
+    
+            &_memories-subtitle {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+    .wishes {
+
+        &__content {
+            padding: 1rem 0;
+        }
+    
+        &__title {
+            margin-bottom: 1rem;
+        }
+    
+        &__item {
+            border-radius: 3rem;
+            margin-bottom: 1rem;
+            
+        }
+    
+        &__item-button {
+            font-size: 1.4rem;
+            padding: 0.8rem 0;
+        }
+    
+        &__item-content {
+            font-size: 1.2rem;
+            margin-bottom: 0.7rem;
+    
+            &-photo {
+                margin: 0 auto 0.8rem;
+                width: 15rem;
+                border-radius: 1.5rem;
+            }
+    
+            &-text {
+                padding-bottom: 0.8rem;
+            }
+        }
+    }    
+}

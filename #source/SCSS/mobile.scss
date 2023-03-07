@@ -1,0 +1,25 @@
+@media (max-width: 770px) {
+    .home {
+        &__content {
+            padding: 1rem 0;
+            text-align: center;
+        }
+    
+        &__title {
+            margin-top: 10rem;
+            margin-bottom: 3rem;
+        }
+    
+        &__subtitle {
+            font-size: 1.7rem;
+        }
+    }
+    
+    .subtitle {
+        &__home {
+            &-text {
+                margin-bottom: 0.7rem;
+            }
+        }
+    }
+}
